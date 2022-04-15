@@ -13,16 +13,12 @@
     <div id="app"></div>
 
     <script>
-      {
-        var a = 1234;
-        console.log(a);
-      }
-
-      {
-        let b = 456;
-      }
-      // Al imprimir, imprime un error debido al scope
-      console.log(b);
+      const a = {
+        name: "b",
+      };
+      a.name = "c";
+      console.log(a);
+      const b = 3;
     </script>
   </body>
 </html>
