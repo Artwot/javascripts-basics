@@ -4,20 +4,25 @@ const app = document.getElementById("app");
 app.innerHTML = "<h1>JavaScript Basics</h1>";
 
 // ----
-const number = 1;
-const result = 'The Number is: ' + (number === 1 ? 'One' : 'No Match');
+const number = 1000;
+let result;
+
+switch (number) {
+  case 1: {
+    const text = 'One';
+    result = text;
+    break;
+  }
+  case 99: {
+    const text = 'Ninety-Nine';
+    result = text;
+    break;
+  }
+  case 1000:
+    result = 'One Thousand';
+    break;
+  default:
+    result = 'No Match';
+}
 
 console.log(result);
-
-// Se pueden anidar los operadores ternarios, algo similar a else if
-const anotherNumber = 99;
-const anotherResult =
-  anotherNumber === 1
-    ? 'One'
-    : anotherNumber === 99
-    ? 'Ninety-Nine'
-    : anotherNumber === 1000
-    ? 'One Thousand'
-    : 'No Match';
-
-console.log(anotherResult);
