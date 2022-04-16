@@ -15,3 +15,4 @@ JavaScript Basics: Starter Project
 ---
 
 Members, please refer to the [course setup](https://app.ultimatecourses.com/course/javascript-basics) instructions to get started!
+# javascripts-basics
